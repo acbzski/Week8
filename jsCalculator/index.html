@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>JavaScript Calculator</title>
+<script>
+    function Add(){
+        var total = parseFloat(document.getElementById("add1").value) + parseFloat(document.getElementById("add2").value);
+        if(isNaN(total)){
+            alert("Please insert a number in both fields!");
+        } else {
+            alert("Your total is " + total);
+        }
+    }
+    function Subtract(){
+        var total = parseFloat(document.getElementById("sub1").value) - parseFloat(document.getElementById("sub2").value);
+        if(isNaN(total)){
+            alert("Please insert a number in both fields!");
+        } else {
+            alert("Your total is " + total);
+        }
+    }
+    function Multiply(){
+        var total = parseFloat(document.getElementById("mul1").value) * parseFloat(document.getElementById("mul2").value);
+        if(isNaN(total)){
+            alert("Please insert a number in both fields!");
+        } else {
+            alert("Your total is " + total);
+        }
+    }
+    function Divide(){
+        var total = parseFloat(document.getElementById("div1").value) / parseFloat(document.getElementById("div2").value);
+        if(isNaN(total)){
+            alert("Please insert a number in both fields!");
+        } else {
+            alert("Your total is " + total);
+        }
+    }
+</script>
+<style>
+body{
+    background-color:darkslategray;
+    color:azure;
+}
+</style>
+</head>
+<body>
+<h1>JavaScript Calculator</h1>
+<p>This page is a demonstration project that utilizes JavaScript to process
+    numerical input and spit it back out in calculated form. Try it out!
+</p>
+<p>Add: <input type="text" id="add1"> + <input type="text" id="add2"> <button onclick="Add()">Calculate</button></p>
+<p>Subtract: <input type="text" id="sub1"> - <input type="text" id="sub2"> <button onclick="Subtract()">Calculate</button></p>
+<p>Multiply: <input type="text" id="mul1"> * <input type="text" is="mul2"> <button onclick="Multiply()">Calculate</button></p>
+<p>Divide: <input type="text" id="div1"> / <input type="text" id="div2"> <button onclick="Divide()">Calculate</button></p>
+</body>
+</html>
